@@ -15,9 +15,13 @@ const Recipe = ({ title, calories, image, ingredients }) => {
           <button class="btn btn-danger ">{title}</button>
           <div class="card-text p-2">
             <table className="text-center">
-              {ingredients.map((ingredient, i) => (
-                <tr key={i}>{ingredient.text}</tr>
-              ))}
+              <tbody>
+                {ingredients.map((ingredient, i) => (
+                  <tr key={i}>
+                    <td>{ingredient.text}</td>
+                  </tr>
+                ))}
+              </tbody>
             </table>
           </div>
           <p class="btn btn-primary">Calories: {calories.toFixed(2)}</p>
