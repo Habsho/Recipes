@@ -12,14 +12,14 @@ const Recipe = ({
   return (
     <div>
       <div className="row m-4 p-3 shadow">
-        <div className="col-4 d-flex justify-content-center align-items-center">
+        <div className="col-md-4 col-sm-6 d-flex justify-content-center align-items-center">
           <img
             className="recipe-img rounded-circle"
             src={image}
             alt="Card  cap"
           />
         </div>
-        <div className="col-8 d-flex justify-content-center align-items-center flex-column">
+        <div className="col-8 mx-auto d-flex justify-content-center align-items-center flex-column">
           <button className="btn btn-danger ">{title}</button>
           <div className="card-text p-2">
             <table className="text-center">
